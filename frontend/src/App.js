@@ -46,7 +46,9 @@ function App() {
           exact path="/cita/:id"
           render={(props) => {
             const cita = citas.filter(cita => cita._id === props.match.params.id)
-            return(<Cita cita={cita[0]}/>)
+            return(<Cita cita={cita[0]}
+                         guardarConsultar={guardarConsultar}
+                  />)
           }}
         />
       </Switch>

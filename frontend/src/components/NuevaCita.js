@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import {Link, withRouter} from 'react-router-dom';
-import clienteAxios from '../config/axios'
+import clienteAxios from '../config/axios';
 
 const NuevaCita = (props) => {
 
